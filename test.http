@@ -1,0 +1,89 @@
+###
+#
+# Browse Books
+#
+GET http://localhost:4004/catalog/Books?
+  # &$select=title,stock
+  # &$expand=currency
+  # &sap-language=de
+
+###
+#
+# Get Author wit ID 101
+#
+GET http://localhost:4004/catalog/Authors(101)
+
+###
+#
+# Update Author with ID 101
+#
+POST http://localhost:4004/catalog/Authors
+Content-Type: application/json
+
+{"ID": 101, "name": "Some Author"}
+
+
+###
+#
+# Order a Book
+#
+POST http://localhost:4004/catalog/Orders
+Content-Type: application/json;IEEE754Compatible=true
+
+{"book_ID": 201, "amount": 5}
+
+
+###
+#
+# Browse Products
+#
+
+GET http://localhost:4004/catalog/Products
+
+
+###
+#
+# Order a product
+#
+POST http://localhost:4004/catalog/Products
+Content-Type: application/json
+
+{"customerName": "Pedri", "address": "Morocco", "delivered": true}
+
+
+###
+#
+# Delete a product
+#
+DELETE http://localhost:4004/catalog/Products(a65506cf-8bed-4981-8447-de462f150d76)
+Content-Type: application/json
+
+###
+#
+# Update a product
+#
+PATCH  http://localhost:4004/catalog/Products(d7f758cb-d938-4f01-9ebf-fe143f34c151)
+Content-Type: application/json
+
+{"customerName":"Ramen", "delivered": true}
+
+
+###
+#
+# Browse All Customers
+#
+GET http://localhost:4004/catalog/Customers
+
+###
+#
+# Create Customer
+POST http://localhost:4004/catalog/Customers
+Content-Type: application/json
+
+{"CustomerName": "Ramen", "City": "New York", "Country": "USA", "Date": "22 November, 2022", "delivered": true}
+
+
+
+
+
+

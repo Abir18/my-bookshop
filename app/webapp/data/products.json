@@ -1,0 +1,36 @@
+{
+    "ProductCollection": [
+        {
+            "OrderId": "156553",
+            "CustomerName": "Fuad",
+            "City": "Dhaka",
+            "Country": "Bangladesh",
+            "Date": "22 November, 2022",
+            "Delivered": false
+        },
+        {
+            "OrderId": "256355",
+            "CustomerName": "Rifat",
+            "City": "Chittagong",
+            "Country": "Bangladesh",
+            "Date": "23 November, 2022",
+            "Delivered": true
+        },
+        {
+            "OrderId": "378983",
+            "CustomerName": "Suweb",
+            "City": "Karachi",
+            "Country": "Pakistan",
+            "Date": "12 November, 2022",
+            "Delivered": false
+        },
+        {
+            "OrderId": "485687",
+            "CustomerName": "Ashik",
+            "City": "Sikkim",
+            "Country": "India",
+            "Date": "2 November, 2022",
+            "Delivered": true
+        }
+    ]
+}

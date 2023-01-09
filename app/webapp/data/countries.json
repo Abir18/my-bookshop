@@ -1,0 +1,17 @@
+[
+    {
+        "countryId": 1,
+        "countryName": "Bangladesh",
+        "cities": ["Dhaka", "Chittagong", "Khulna"]
+    },
+    {
+        "countryId": 2,
+        "countryName": "Pakistan",
+        "cities": ["Karachi", "Lahore", "Ahmedabad"]
+    },
+    {
+        "countryId": 3,
+        "countryName": "India",
+        "cities": ["Mumbai", "Kashmir", "Sikkim"]
+    }
+]
