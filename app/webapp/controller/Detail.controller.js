@@ -32,57 +32,20 @@ sap.ui.define(
                 if (productIndex) {
                     if (productIndex == "new") {
                         console.log("New Customer");
+                        // const randomId = parseInt(Date.now() + Math.random())
+                        //     .toString()
+                        //     .slice(6);
+                        // this.byId("app_input_orderno").setValue(randomId);
+
+                        // this.byId("detail_form").bindElement(
+                        //     `customers>/Customers('${randomId}')`
+                        // );
                     } else {
                         this.byId("detail_form").bindElement({
                             path: `customers>/Customers('${productIndex}')`,
                             parameters: { $$updateGroupId: "customerGroup" }
                         });
                     }
-
-                    // console.log(productIndex, "productIndex");
-
-                    // if (productIndex == "new") {
-                    //     const randomId = parseInt(Date.now() + Math.random())
-                    //         .toString()
-                    //         .slice(6);
-
-                    //     console.log(randomId, "rrr");
-
-                    //     // this.byId("detail_form").bindElement(
-                    //     //     `customers>/Customers('${randomId}')`
-                    //     // );
-
-                    //     // this.byId("app_input_orderno").setValue(randomId);
-                    // } else {
-                    //     const oModel = that.getView().getModel("customers");
-
-                    //     console.log("oModel", oModel);
-
-                    //     if (oModel) {
-                    //         // const productData = oModel.getData();
-
-                    //         // console.log("productData", productData);
-
-                    //         // const countryName =
-                    //         //     productData[productIndex].Country;
-
-                    //         const countryName = this.byId("app_input_country");
-
-                    //         const countriesData = this.getView()
-                    //             .getModel("countries")
-                    //             .getData();
-
-                    //         const selectedCountryData = countriesData.find(
-                    //             (country) => country.countryName === countryName
-                    //         );
-
-                    //         const cityModel = new JSONModel(
-                    //             selectedCountryData
-                    //         );
-
-                    //         this.getView().setModel(cityModel, "cityName");
-                    //     }
-                    // }
                 }
             },
 
