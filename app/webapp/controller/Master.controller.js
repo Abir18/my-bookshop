@@ -52,21 +52,21 @@ sap.ui.define(
 
                 this.oRouter = this.oOwnerComponent.getRouter();
 
-                this.oRouter.attachRouteMatched(this.onRouteMatched, this);
+                // this.oRouter.attachRouteMatched(this.onRouteMatched, this);
             },
 
-            onRouteMatched: function (oEvent) {
-                const localStorageData =
-                    localStorage.getItem("LocalStorageData");
-                const parseData = JSON.parse(localStorageData);
+            // onRouteMatched: function (oEvent) {
+            //     const localStorageData =
+            //         localStorage.getItem("LocalStorageData");
+            //     const parseData = JSON.parse(localStorageData);
 
-                const ProductsModel = new JSONModel(parseData);
-                this.getView().setModel(ProductsModel, "products");
-            },
+            //     const ProductsModel = new JSONModel(parseData);
+            //     this.getView().setModel(ProductsModel, "products");
+            // },
 
-            test: function () {
-                console.log("test");
-            },
+            // test: function () {
+            //     console.log("test");
+            // },
 
             onSearch: function (oEvent) {
                 var oTableSearchState = [],
@@ -132,7 +132,7 @@ sap.ui.define(
                         .toString()
                         .slice(6);
 
-                    // console.log(randomId, "rrr");
+                    console.log(randomId, "rrr");
 
                     this.oRouter.navTo("detail", {
                         layout: fioriLibrary.LayoutType.TwoColumnsBeginExpanded,
